@@ -1,0 +1,109 @@
+/* ==============================
+   About Us Section – Image Grid
+============================== */
+.about-image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.about-image-card {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 0 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border: 10px solid transparent;
+  border-image: linear-gradient(to bottom right, #ccc, #eee) 1;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+}
+
+.about-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0 !important;
+}
+
+/* Remove any corner radius overrides */
+.about-image-card.top-left,
+.about-image-card.bottom-right {
+  border-radius: 0 !important;
+}
+
+/* Responsive grid-like stacking like gallery */
+@media (max-width: 768px) {
+  .about-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 140px;
+    gap: 10px;
+  }
+
+  .about-image-card {
+    height: 140px !important;
+  }
+}
+
+
+/* =========================
+   Vision / Mission Cards
+========================= */
+.vision-mission-card {
+  background: #fff;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to bottom right, #ccc, #eee) 1;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.vision-mission-card h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.vision-mission-card p {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+
+/* =========================
+   Vision / Mission Cards
+========================= */
+.vision-mission-card {
+  background: #fff;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to bottom right, #ccc, #eee) 1;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.vision-mission-card h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.vision-mission-card p {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-image-card {
+    height: 180px;
+  }
+}
+

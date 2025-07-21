@@ -1,0 +1,14 @@
+.top-header {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+
+
+@media (max-width: 768px) {
+  .top-header .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.4rem;
+  }
+}

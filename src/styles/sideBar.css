@@ -1,0 +1,45 @@
+/* OUTER BOX (flat card, no round) */
+.sidebar-wrapper {
+  border: 1px solid #d4d4d4;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+/* INNER THICK BORDER */
+.inner-border {
+  border: 8px solid #d4d4d4;
+  border-image: linear-gradient(to bottom right, #ccc, #eee) 1;
+  background-color: #fff;
+  border-radius: 0;
+}
+
+/* CUSTOM SELECT UI – FULL OVERRIDE */
+.custom-select-ui {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background-color: #fff;
+  border: 2px solid #cfd8dc;
+  color: #212529;
+  background-image: url("data:image/svg+xml,%3Csvg fill='none' stroke='gray' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+  transition: border 0.2s ease;
+}
+
+.custom-select-ui:focus {
+  border-color: #fd990d;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* Prevent Firefox blue background */
+select.custom-select-ui:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}

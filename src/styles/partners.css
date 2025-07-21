@@ -1,0 +1,52 @@
+/* ====================
+   Partners Section
+======================= */
+
+.partners-section {
+  width: 100%;
+  background-color: #f8f9fa;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-flex;
+  align-items: center;
+  animation: scroll var(--scroll-duration, 30s) linear infinite;
+  width: max-content;
+}
+
+.logo-container {
+  flex: 0 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+
+}
+
+.logo-container img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

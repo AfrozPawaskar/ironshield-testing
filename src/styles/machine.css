@@ -1,0 +1,43 @@
+.image-hover-effect {
+  transition: all 0.4s ease-in-out;
+}
+
+.about-image-card:hover .image-hover-effect {
+  filter: brightness(0.6);
+  transform: scale(1.05);
+}
+
+.image-hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-image-card:hover .image-hover-text {
+  opacity: 1;
+}
+
+.machine-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #f3efef;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  max-width: 90%;
+}
+
+@media (max-width: 576px) {
+  .machine-name {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
